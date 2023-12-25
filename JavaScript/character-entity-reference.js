@@ -1429,7 +1429,7 @@ function convertFromCharacterEntityReferenceBasic(source) {
  * @returns 置きかえられた文字列の配列。
  */
 function convertFromCharacterEntityReferenceAllBasic(sources) {
-    for (let i = 0; i < sources.Length; i++) {
+    for (let i = 0; i < sources.length; i++) {
         sources[i] = convertFromCharacterEntityReferenceBasic(sources[i]);
     }
 
@@ -9276,7 +9276,7 @@ function convertFromCharacterEntityReference(source) {
  * @returns 置きかえられた文字列の配列。
  */
 function convertFromCharacterEntityReferenceAll(sources) {
-    for (let i = 0; i < sources.Length; i++) {
+    for (let i = 0; i < sources.length; i++) {
         sources[i] = convertFromCharacterEntityReference(sources[i]);
     }
 
@@ -10059,7 +10059,7 @@ function convertToCharacterEntityReferenceBasic(source) {
  * @returns 置きかえられた文字列の配列。
  */
 function convertToCharacterEntityReferenceAllBasic(sources) {
-    for (let i = 0; i < sources.Length; i++) {
+    for (let i = 0; i < sources.length; i++) {
         sources[i] = convertToCharacterEntityReferenceBasic(sources[i]);
     }
 
@@ -14431,7 +14431,7 @@ function convertToCharacterEntityReference(source, escapeSequenceFlag) {
  * @returns 置きかえられた文字列の配列。
  */
 function convertToCharacterEntityReferenceAll(sources, escapeSequenceFlag) {
-    for (let i = 0; i < sources.Length; i++) {
+    for (let i = 0; i < sources.length; i++) {
         sources[i] = convertToCharacterEntityReference(sources[i], escapeSequenceFlag);
     }
 
