@@ -1,8 +1,8 @@
-/// <summary>
-/// 入力される文字列内の文字実体参照を文字や記号に置きかえます。ベーシック版です。
-/// </summary>
-/// <param name="source">置きかえられる文字列。</param>
-/// <returns>置きかえられた文字列。</returns>
+/**
+ * 入力される文字列内の文字実体参照を文字や記号に置きかえます。ベーシック版です。
+ * @param {*} source 置きかえられる文字列。
+ * @returns 置きかえられた文字列。
+ */
 function convertFromCharacterEntityReferenceBasic(source) {
     let txt = source;
 
@@ -1423,11 +1423,11 @@ function convertFromCharacterEntityReferenceBasic(source) {
     return txt;
 }
 
-/// <summary>
-/// 入力される文字列内の文字実体参照を文字や記号に置きかえます。ベーシック版です。
-/// </summary>
-/// <param name="sources">置きかえられる文字列の配列。</param>
-/// <returns>置きかえられた文字列の配列。</returns>
+/**
+ * 入力される文字列内の文字実体参照を文字や記号に置きかえます。ベーシック版です。
+ * @param {*} sources 置きかえられる文字列の配列。
+ * @returns 置きかえられた文字列の配列。
+ */
 function convertFromCharacterEntityReferenceAllBasic(sources) {
     for (let i = 0; i < sources.Length; i++) {
         sources[i] = convertFromCharacterEntityReferenceBasic(sources[i]);
@@ -1436,11 +1436,11 @@ function convertFromCharacterEntityReferenceAllBasic(sources) {
     return sources;
 }
 
-/// <summary>
-/// 入力される文字列内の文字実体参照を文字や記号に置きかえます。
-/// </summary>
-/// <param name="source">置きかえられる文字列。</param>
-/// <returns>置きかえられた文字列。</returns>
+/**
+ * 入力される文字列内の文字実体参照を文字や記号に置きかえます。
+ * @param {*} source 置きかえられる文字列。
+ * @returns 置きかえられた文字列。
+ */
 function convertFromCharacterEntityReference(source) {
     let txt = source;
 
@@ -9270,11 +9270,11 @@ function convertFromCharacterEntityReference(source) {
     return txt;
 }
 
-/// <summary>
-/// 入力される文字列内の文字実体参照を文字や記号に置きかえます。
-/// </summary>
-/// <param name="sources">置きかえられる文字列の配列。</param>
-/// <returns>置きかえられた文字列の配列。</returns>
+/**
+ * 入力される文字列内の文字実体参照を文字や記号に置きかえます。
+ * @param {*} sources 置きかえられる文字列の配列。
+ * @returns 置きかえられた文字列の配列。
+ */
 function convertFromCharacterEntityReferenceAll(sources) {
     for (let i = 0; i < sources.Length; i++) {
         sources[i] = convertFromCharacterEntityReference(sources[i]);
@@ -9283,11 +9283,11 @@ function convertFromCharacterEntityReferenceAll(sources) {
     return sources;
 }
 
-/// <summary>
-/// 入力される文字列内の文字や記号を文字実体参照に置きかえます。ベーシック版です。
-/// </summary>
-/// <param name="source">置きかえられる文字列。</param>
-/// <returns>置きかえられた文字列。</returns>
+/**
+ * 入力される文字列内の文字や記号を文字実体参照に置きかえます。ベーシック版です。
+ * @param {*} source 置きかえられる文字列。
+ * @returns 置きかえられた文字列。
+ */
 function convertToCharacterEntityReferenceBasic(source) {
     let txt = source;
 
@@ -10053,11 +10053,11 @@ function convertToCharacterEntityReferenceBasic(source) {
     return txt;
 }
 
-/// <summary>
-/// 入力される文字列内の文字や記号を文字実体参照に置きかえます。ベーシック版です。
-/// </summary>
-/// <param name="sources">置きかえられる文字列の配列。</param>
-/// <returns>置きかえられた文字列の配列。</returns>
+/**
+ * 入力される文字列内の文字や記号を文字実体参照に置きかえます。ベーシック版です。
+ * @param {*} sources 置きかえられる文字列の配列。
+ * @returns 置きかえられた文字列の配列。
+ */
 function convertToCharacterEntityReferenceAllBasic(sources) {
     for (let i = 0; i < sources.Length; i++) {
         sources[i] = convertToCharacterEntityReferenceBasic(sources[i]);
@@ -10066,12 +10066,12 @@ function convertToCharacterEntityReferenceAllBasic(sources) {
     return sources;
 }
 
-/// <summary>
-/// 入力される文字列内の文字や記号を文字実体参照に置きかえます。
-/// </summary>
-/// <param name="source">置きかえられる文字列。</param>
-/// <param name="escapeSequenceFlag">エスケープシーケンスを置きかえるフラグ。</param>
-/// <returns>置きかえられた文字列。</returns>
+/**
+ * 入力される文字列内の文字や記号を文字実体参照に置きかえます。
+ * @param {*} source 置きかえられる文字列。
+ * @param {*} escapeSequenceFlag エスケープシーケンスを置きかえるフラグ。
+ * @returns 置きかえられた文字列。
+ */
 function convertToCharacterEntityReference(source, escapeSequenceFlag) {
     let txt = source;
 
@@ -14424,12 +14424,12 @@ function convertToCharacterEntityReference(source, escapeSequenceFlag) {
     return txt;
 }
 
-/// <summary>
-/// 入力される文字列内の文字や記号を文字実体参照に置きかえます。
-/// </summary>
-/// <param name="sources">置きかえられる文字列の配列。</param>
-/// <param name="escapeSequenceFlag">エスケープシーケンスを置きかえるフラグ。</param>
-/// <returns>置きかえられた文字列の配列。</returns>
+/**
+ * 入力される文字列内の文字や記号を文字実体参照に置きかえます。
+ * @param {*} sources 置きかえられる文字列の配列。
+ * @param {*} escapeSequenceFlag エスケープシーケンスを置きかえるフラグ。
+ * @returns 置きかえられた文字列の配列。
+ */
 function convertToCharacterEntityReferenceAll(sources, escapeSequenceFlag) {
     for (let i = 0; i < sources.Length; i++) {
         sources[i] = convertToCharacterEntityReference(sources[i], escapeSequenceFlag);
