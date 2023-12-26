@@ -13,7 +13,7 @@ namespace My.Text
         /// </summary>
         /// <param name="source">置きかえられる文字列。</param>
         /// <returns>置きかえられた文字列。</returns>
-        static public string ConvertFromCharacterEntityReferenceBasic(string source)
+        static public string ConvertFromBasic(string source)
         {
             string txt = source;
 
@@ -1439,11 +1439,11 @@ namespace My.Text
         /// </summary>
         /// <param name="sources">置きかえられる文字列の配列。</param>
         /// <returns>置きかえられた文字列の配列。</returns>
-        static public string[] ConvertFromCharacterEntityReferenceBasic(string[] sources)
+        static public string[] ConvertFromBasic(string[] sources)
         {
             for (int i = 0; i < sources.Length; i++)
             {
-                sources[i] = ConvertFromCharacterEntityReferenceBasic(sources[i]);
+                sources[i] = ConvertFromBasic(sources[i]);
             }
 
             return sources;
@@ -1454,7 +1454,7 @@ namespace My.Text
         /// </summary>
         /// <param name="source">置きかえられる文字列。</param>
         /// <returns>置きかえられた文字列。</returns>
-        static public string ConvertFromCharacterEntityReference(string source)
+        static public string ConvertFrom(string source)
         {
             string txt = source;
 
@@ -9289,11 +9289,11 @@ namespace My.Text
         /// </summary>
         /// <param name="sources">置きかえられる文字列の配列。</param>
         /// <returns>置きかえられた文字列の配列。</returns>
-        static public string[] ConvertFromCharacterEntityReference(string[] sources)
+        static public string[] ConvertFrom(string[] sources)
         {
             for (int i = 0; i < sources.Length; i++)
             {
-                sources[i] = ConvertFromCharacterEntityReference(sources[i]);
+                sources[i] = ConvertFrom(sources[i]);
             }
 
             return sources;
@@ -9304,7 +9304,7 @@ namespace My.Text
         /// </summary>
         /// <param name="source">置きかえられる文字列。</param>
         /// <returns>置きかえられた文字列。</returns>
-        static public string ConvertToCharacterEntityReferenceBasic(string source)
+        static public string ConvertToBasic(string source)
         {
             StringBuilder txt = new StringBuilder(source);
 
@@ -10075,11 +10075,11 @@ namespace My.Text
         /// </summary>
         /// <param name="sources">置きかえられる文字列の配列。</param>
         /// <returns>置きかえられた文字列の配列。</returns>
-        static public string[] ConvertToCharacterEntityReferenceBasic(string[] sources)
+        static public string[] ConvertToBasic(string[] sources)
         {
             for (int i = 0; i < sources.Length; i++)
             {
-                sources[i] = ConvertToCharacterEntityReferenceBasic(sources[i]);
+                sources[i] = ConvertToBasic(sources[i]);
             }
 
             return sources;
@@ -10091,7 +10091,7 @@ namespace My.Text
         /// <param name="source">置きかえられる文字列。</param>
         /// <param name="escapeSequenceFlag">エスケープシーケンスを置きかえるフラグ。</param>
         /// <returns>置きかえられた文字列。</returns>
-        static public string ConvertToCharacterEntityReference(string source, bool escapeSequenceFlag)
+        static public string ConvertTo(string source, bool escapeSequenceFlag)
         {
             StringBuilder txt = new StringBuilder(source);
 
@@ -14451,11 +14451,11 @@ namespace My.Text
         /// <param name="sources">置きかえられる文字列の配列。</param>
         /// <param name="escapeSequenceFlag">エスケープシーケンスを置きかえるフラグ。</param>
         /// <returns>置きかえられた文字列の配列。</returns>
-        static public string[] ConvertToCharacterEntityReference(string[] sources, bool escapeSequenceFlag)
+        static public string[] ConvertTo(string[] sources, bool escapeSequenceFlag)
         {
             for (int i = 0; i < sources.Length; i++)
             {
-                sources[i] = ConvertToCharacterEntityReference(sources[i], escapeSequenceFlag);
+                sources[i] = ConvertTo(sources[i], escapeSequenceFlag);
             }
 
             return sources;

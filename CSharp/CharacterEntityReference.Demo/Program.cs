@@ -7,8 +7,8 @@ class Program
         var text = "&quot;abcdef&quot;";
         var text2 = "\\";
 
-        var result = CharacterEntityReference.ConvertFromCharacterEntityReference(text);
-        var result2 = CharacterEntityReference.ConvertToCharacterEntityReference(text2, true);
+        var result = CharacterEntityReference.ConvertFrom(text);
+        var result2 = CharacterEntityReference.ConvertTo(text2, true);
 
         Console.WriteLine(result);
         Console.WriteLine(result2);
