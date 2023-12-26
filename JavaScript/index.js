@@ -1,4 +1,4 @@
-const CharacterEntityReference = require('../lib/character-entity-reference.js');
+const CharacterEntityReference = require('./lib/character-entity-reference.js');
 
 const text = '&quot;abcdef&quot;';
 const text2 = '\\';

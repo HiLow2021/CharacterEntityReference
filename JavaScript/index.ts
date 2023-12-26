@@ -1,4 +1,4 @@
-import CharacterEntityReference from '../lib/character-entity-reference';
+import CharacterEntityReference from './lib/character-entity-reference';
 
 const text = '&quot;abcdef&quot;';
 const text2 = '\\';
