@@ -1,13 +1,4 @@
 node_modules
-output
-out
 bin
 obj
-build
-media
-test
-coverage
 __pycache__
-.env
-.venv
-credentials.json
