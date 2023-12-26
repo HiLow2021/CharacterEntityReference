@@ -4,7 +4,7 @@ class CharacterEntityReference {
      * @param {*} source 置きかえられる文字列。
      * @returns 置きかえられた文字列。
      */
-    static convertFromCharacterEntityReferenceBasic(source) {
+    static convertFromBasic(source) {
         let txt = source;
 
         // "U+00022", "QUOTATION MARK"
@@ -1429,9 +1429,9 @@ class CharacterEntityReference {
      * @param {*} sources 置きかえられる文字列の配列。
      * @returns 置きかえられた文字列の配列。
      */
-    static convertFromCharacterEntityReferenceAllBasic(sources) {
+    static convertFromAllBasic(sources) {
         for (let i = 0; i < sources.length; i++) {
-            sources[i] = convertFromCharacterEntityReferenceBasic(sources[i]);
+            sources[i] = convertFromBasic(sources[i]);
         }
 
         return sources;
@@ -1442,7 +1442,7 @@ class CharacterEntityReference {
      * @param {*} source 置きかえられる文字列。
      * @returns 置きかえられた文字列。
      */
-    static convertFromCharacterEntityReference(source) {
+    static convertFrom(source) {
         let txt = source;
 
         // "U+00009", "CHARACTER TABULATION"
@@ -9276,9 +9276,9 @@ class CharacterEntityReference {
      * @param {*} sources 置きかえられる文字列の配列。
      * @returns 置きかえられた文字列の配列。
      */
-    static convertFromCharacterEntityReferenceAll(sources) {
+    static convertFromAll(sources) {
         for (let i = 0; i < sources.length; i++) {
-            sources[i] = convertFromCharacterEntityReference(sources[i]);
+            sources[i] = convertFrom(sources[i]);
         }
 
         return sources;
@@ -9289,7 +9289,7 @@ class CharacterEntityReference {
      * @param {*} source 置きかえられる文字列。
      * @returns 置きかえられた文字列。
      */
-    static convertToCharacterEntityReferenceBasic(source) {
+    static convertToBasic(source) {
         let txt = source;
 
         // "U+00026", "AMPERSAND"
@@ -10059,9 +10059,9 @@ class CharacterEntityReference {
      * @param {*} sources 置きかえられる文字列の配列。
      * @returns 置きかえられた文字列の配列。
      */
-    static convertToCharacterEntityReferenceAllBasic(sources) {
+    static convertToAllBasic(sources) {
         for (let i = 0; i < sources.length; i++) {
-            sources[i] = convertToCharacterEntityReferenceBasic(sources[i]);
+            sources[i] = convertToBasic(sources[i]);
         }
 
         return sources;
@@ -10073,7 +10073,7 @@ class CharacterEntityReference {
      * @param {*} escapeSequenceFlag エスケープシーケンスを置きかえるフラグ。
      * @returns 置きかえられた文字列。
      */
-    static convertToCharacterEntityReference(source, escapeSequenceFlag) {
+    static convertTo(source, escapeSequenceFlag) {
         let txt = source;
 
         // "U+00026", "AMPERSAND"
@@ -14431,9 +14431,9 @@ class CharacterEntityReference {
      * @param {*} escapeSequenceFlag エスケープシーケンスを置きかえるフラグ。
      * @returns 置きかえられた文字列の配列。
      */
-    static convertToCharacterEntityReferenceAll(sources, escapeSequenceFlag) {
+    static convertToAll(sources, escapeSequenceFlag) {
         for (let i = 0; i < sources.length; i++) {
-            sources[i] = convertToCharacterEntityReference(sources[i], escapeSequenceFlag);
+            sources[i] = convertTo(sources[i], escapeSequenceFlag);
         }
 
         return sources;
